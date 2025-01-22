@@ -1,6 +1,9 @@
 let inventory;
 let damage = 3;
 let multiplier = 1;
+let trueDamage;
+let bossHealth;
+let satanIMG;
 
 window.onload = () => {
   if (!localStorage.getItem("clickCount")) {
@@ -13,7 +16,7 @@ window.onload = () => {
   displayElement.innerHTML = clickCount;
 
   let health = document.getElementById("boss-health");
-  let bossHealth = Number(localStorage.getItem("bossHealth"));
+  bossHealth = Number(localStorage.getItem("bossHealth"));
 
   if (!localStorage.getItem("inventory")) {
     localStorage.setItem("inventory", JSON.stringify({}));
@@ -26,30 +29,50 @@ window.onload = () => {
   }
 
   if (!localStorage.getItem("bossHealth")) {
-    localStorage.setItem("bossHealth", 100000);
+    localStorage.setItem("bossHealth", 1000);
   }
+
+  satanIMG = document.querySelector(".SATAN");
+
   const totalDamage = Object.values(inventory).reduce(
     (total, item) => total + item.damage,
     damage
   );
 
-  if (inventory[item])
+  if (inventory["maxHead"]) {
+    trueDamage = totalDamage * 1.5;
+  } else {
+    trueDamage = totalDamage
+  }
 
-  inventory.includes()
 
-  console.log(totalDamage);
+
+  console.log(trueDamage);
   function paina() {
     clickCount += 1;
     localStorage.setItem("clickCount", clickCount);
     displayElement.innerHTML = clickCount;
 
-    bossHealth -= totalDamage;
+    bossHealth -= trueDamage;
     localStorage.setItem("bossHealth", bossHealth);
     health.innerHTML = Math.round(bossHealth);
+
+    if (bossHealth <= 0) {
+      GameWon();
+    }
   }
 
   window.paina = paina;
 };
+
+function GameWon() {
+  changeIMG();
+}
+
+function changeIMG() {
+    satanIMG.src = "img/SATAN-Rage.png";
+  }
+
 
 function SaveAndRedirect() {
   window.location.href = "kauppa.html";
