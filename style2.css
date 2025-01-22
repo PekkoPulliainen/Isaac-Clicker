@@ -1,0 +1,203 @@
+body {
+    background-image: url(img/shop-ui2.webp);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
+
+  .coin {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    width: 130px;
+}
+
+.rahamaara {
+    position: absolute;
+    top: 13%;
+    left: 6.35%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 350%;
+    text-align: center;
+    color: darkred;
+}
+
+.sheol {
+    font-size: 300%;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 20%;
+    height: 18%;
+    opacity: 0.3;
+}
+
+.buySmallR {
+        position: absolute;
+        top: 25%;
+        left: 92%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 100px;
+        width: 8%;
+        height: 15%;
+        opacity: 0.3;
+}
+
+.buySmallRL {
+    position: absolute;
+    top: 15%;
+    left: 91.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 250%;
+    color: red;
+}
+
+.buyJ {
+    position: absolute;
+    top: 54%;
+    left: 96.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 7%;
+    height: 13%;
+    opacity: 0.3;
+}
+
+.buyJL {
+position: absolute;
+top: 45%;
+left: 96%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+font-size: 250%;
+color: red;
+}
+
+.buyMH {
+    position: absolute;
+    top: 54%;
+    left: 89.3%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 6.5%;
+    height: 13%;
+    opacity: 0.3;
+}
+
+.buyML {
+position: absolute;
+top: 45.2%;
+left: 88.8%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+font-size: 250%;
+color: red;
+}
+
+.buyBrimstone {
+    position: absolute;
+    top: 51.5%;
+    left: 21.3%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 10%;
+    height: 17%;
+    opacity: 0.3;
+}
+
+.buyBrimL {
+position: absolute;
+top: 40%;
+left: 21%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+font-size: 250%;
+color: red;
+}
+
+.buyNail {
+    position: absolute;
+    top: 52.5%;
+    left: 12.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 4%;
+    height: 16%;
+    opacity: 0.3;
+}
+
+.buyNailL {
+position: absolute;
+top: 42%;
+left: 12%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+font-size: 250%;
+color: red;
+}
+
+.buyKnife {
+    position: absolute;
+    top: 52.5%;
+    left: 4.7%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 5%;
+    height: 20%;
+    opacity: 0.3;
+}
+
+.buyKnifeL {
+position: absolute;
+top: 41%;
+left: 4%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+font-size: 250%;
+color: red;
+}
