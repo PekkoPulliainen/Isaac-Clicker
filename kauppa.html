@@ -7,12 +7,20 @@
     <link href="style2.css" rel="stylesheet" />
     <script src="script2.js"></script>
     <link rel="icon" href="img/shopicon (2).png" type="image/icon type" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <audio
+      class="baseMusic"
+      id="musicPlayer"
       autoplay
       loop
-      src="The Binding of Isaac OST - Market music.mp3"
+      src="audio/shop/shop1.mp3"
     ></audio>
     <div class="container">
       <img class="SATAN" src="" />
@@ -23,30 +31,30 @@
     <img class="coin" src="img/coin.png" />
     <p id="click" class="rahamaara"></p>
     <div class="items">
-      <p class="buySmallRL">100</p>
+      <p class="buySmallRL">150</p>
       <button
         onclick="buy('smallRock')"
         id="buySmallR"
         class="buySmallR"
       ></button>
 
-      <p class="buyJL">100</p>
+      <p class="buyJL">250</p>
       <button onclick="buy('jesusJuice')" id="buyJ" class="buyJ"></button>
 
-      <p class="buyML">100</p>
+      <p class="buyML">450</p>
       <button onclick="buy('maxHead')" id="buyMH" class="buyMH"></button>
 
-      <p class="buyBrimL">100</p>
+      <p class="buyBrimL">1000</p>
       <button
         onclick="buy('brimstone')"
         id="buyBrimstone"
         class="buyBrimstone"
       ></button>
 
-      <p class="buyNailL">100</p>
+      <p class="buyNailL">750</p>
       <button onclick="buy('nail')" id="buyNail" class="buyNail"></button>
 
-      <p class="buyKnifeL">100</p>
+      <p class="buyKnifeL">3000</p>
       <button onclick="buy('knife')" id="buyKnife" class="buyKnife"></button>
     </div>
   </body>

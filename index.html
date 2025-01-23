@@ -7,16 +7,26 @@
     <link href="style.css" rel="stylesheet" />
     <script src="script.js"></script>
     <link rel="icon" href="img/IsaacHD.webp" type="image/icon type" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <audio
+      class="baseMusic"
+      id="musicPlayer"
       autoplay
       loop
-      src="The Binding of Isaac Antibirth OST Innocence Glitched (Basement).mp3"
+      src="audio/fight/baseMusic1.mp3"
     ></audio>
     <div class="container">
       <img class="SATAN" src="img/Boss_Satan_portrait.webp" />
-      <button onclick="paina()" id="demo" class="click"></button>
+      <img class="Challenges" src="img/MainPageChallenges.webp" />
+      <button onclick="paina(event)" id="clickbutton" class="click"></button>
+      <button onclick="winClick()" id="winbutton" class="winClick"></button>
     </div>
     <div class="container2">
       <button
@@ -26,9 +36,10 @@
       ></button>
     </div>
     <img class="coin" src="img/coin.png" />
+
     <p id="click" class="rahamaara">0</p>
-    <div class="w3-container">
-      <div class="w3-border">
+    <div class="w3-container" id="healthbar-p1">
+      <div class="w3-border" id="healthbar-p2">
         <div id="boss-health" class="boss-health"></div>
       </div>
     </div>

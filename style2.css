@@ -20,6 +20,7 @@ body {
     font-size: 350%;
     text-align: center;
     color: darkred;
+    font-family: "Comic Neue", serif;
 }
 
 .sheol {
@@ -37,7 +38,7 @@ body {
     border-radius: 100px;
     width: 20%;
     height: 18%;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .buySmallR {
@@ -54,7 +55,7 @@ body {
         border-radius: 100px;
         width: 8%;
         height: 15%;
-        opacity: 0.3;
+        opacity: 0;
 }
 
 .buySmallRL {
@@ -65,6 +66,7 @@ body {
     -ms-transform: translate(-50%, -50%);
     font-size: 250%;
     color: red;
+    font-family: "Comic Neue", serif;
 }
 
 .buyJ {
@@ -81,7 +83,7 @@ body {
     border-radius: 100px;
     width: 7%;
     height: 13%;
-    opacity: 0.3;
+    opacity: 0;
 }
 
 .buyJL {
@@ -92,6 +94,7 @@ transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 font-size: 250%;
 color: red;
+font-family: "Comic Neue", serif;
 }
 
 .buyMH {
@@ -108,7 +111,7 @@ color: red;
     border-radius: 100px;
     width: 6.5%;
     height: 13%;
-    opacity: 0.3;
+    opacity: 0;
 }
 
 .buyML {
@@ -119,6 +122,7 @@ transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 font-size: 250%;
 color: red;
+font-family: "Comic Neue", serif;
 }
 
 .buyBrimstone {
@@ -135,7 +139,7 @@ color: red;
     border-radius: 100px;
     width: 10%;
     height: 17%;
-    opacity: 0.3;
+    opacity: 0;
 }
 
 .buyBrimL {
@@ -146,6 +150,7 @@ transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 font-size: 250%;
 color: red;
+font-family: "Comic Neue", serif;
 }
 
 .buyNail {
@@ -162,7 +167,7 @@ color: red;
     border-radius: 100px;
     width: 4%;
     height: 16%;
-    opacity: 0.3;
+    opacity: 0;
 }
 
 .buyNailL {
@@ -173,6 +178,7 @@ transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 font-size: 250%;
 color: red;
+font-family: "Comic Neue", serif;
 }
 
 .buyKnife {
@@ -189,7 +195,7 @@ color: red;
     border-radius: 100px;
     width: 5%;
     height: 20%;
-    opacity: 0.3;
+    opacity: 0;
 }
 
 .buyKnifeL {
@@ -200,4 +206,5 @@ transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 font-size: 250%;
 color: red;
+font-family: "Comic Neue", serif;
 }
