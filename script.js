@@ -9,13 +9,21 @@ let health;
 let trophyIMG;
 let clickbutton;
 let winbutton;
-let maxBossHealth = 100000;
+let maxBossHealth = 250000;
 let hbp1;
 let hbp2;
 let lastMouseX;
 let lastMouseY;
 
 let gameWon = false;
+
+const musicTracks = [
+  "audio/fight/baseMusic1.mp3",
+  "audio/fight/baseMusic2.mp3",
+  "audio/fight/baseMusic3.mp3",
+];
+
+const globalVolume = 0.2;
 
 window.onload = () => {
   if (!localStorage.getItem("clickCount")) {
@@ -45,7 +53,16 @@ window.onload = () => {
 
   bossHealth = Number(localStorage.getItem("bossHealth"));
 
+  health.style.width = (bossHealth / maxBossHealth) * 100 + "%";
+
+  health.innerHTML = Math.round(bossHealth);
+
   baseMusic = document.querySelector(".baseMusic");
+  baseMusic.volume = globalVolume;
+
+  console.log("Music level: " + baseMusic.volume);
+
+  selectRandomMusic();
 
   satanIMG = document.querySelector(".SATAN");
 
@@ -59,6 +76,11 @@ window.onload = () => {
 
   hbp2 = document.getElementById("healthbar-p2");
 
+  const cryeffect = new Audio("audio/fight/scared whimper.wav");
+  const cryeffect2 = new Audio("audio/fight/scared whimper 2.wav");
+  const teareffect1 = new Audio("audio/fight/tear fire 4.wav");
+  const teareffect2 = new Audio("audio/fight/tear fire 5.wav");
+
   const totalDamage = Object.values(inventory).reduce(
     (total, item) => total + item.damage,
     damage
@@ -69,8 +91,6 @@ window.onload = () => {
   } else {
     trueDamage = totalDamage;
   }
-
-  selectRandomMusic();
 
   console.log(trueDamage);
 
@@ -103,6 +123,28 @@ window.onload = () => {
   function paina(event) {
     if (gameWon) return;
 
+    const Cry = Math.floor(Math.random() * 275);
+    switch (Cry) {
+      case 100:
+        cryeffect.play();
+        break;
+      case 199:
+        cryeffect2.play();
+        break;
+      case 0:
+      case 1:
+      case 2:
+      case 3:
+        teareffect1.play();
+        break;
+      case 4:
+      case 5:
+      case 6:
+      case 7:
+        teareffect2.play();
+        break;
+    }
+
     clickCount += totalDamage / 10;
     localStorage.setItem("clickCount", clickCount);
     displayElement.innerHTML = Math.round(clickCount);
@@ -122,12 +164,6 @@ window.onload = () => {
 
   window.paina = paina;
 };
-
-const musicTracks = [
-  "audio/fight/baseMusic1.mp3",
-  "audio/fight/baseMusic2.mp3",
-  "audio/fight/baseMusic3.mp3",
-];
 
 function selectRandomMusic() {
   const randomIndex = Math.floor(Math.random() * musicTracks.length);

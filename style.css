@@ -14,7 +14,7 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 80px;
+    width: 105px;
     display: none;
 }
 
@@ -106,6 +106,7 @@ body {
     color: rgb(24, 24, 24);
     font-size: 120%;
     font-family: "Comic Neue", serif;
+    font-weight: bolder;
   }
   
 .winClick {
@@ -128,10 +129,13 @@ body {
 
 .dpc {
   position: absolute;
-  color: green;
-  font-size: 200%;
+  color: rgb(38, 136, 38);
+  font-size: 250%;
   pointer-events: none;
   animation: fadeUp 1s ease-out forwards;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-family:fantasy;
 }
 
 @keyframes fadeUp {

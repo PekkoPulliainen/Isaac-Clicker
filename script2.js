@@ -1,6 +1,14 @@
 let clickCount;
 let baseMusic;
 
+const musicTracks = [
+  "audio/shop/shop1.mp3",
+  "audio/shop/shop2.mp3",
+  "audio/shop/shop3.mp3",
+];
+
+const globalVolume = 0.25;
+
 window.onload = () => {
   if (!localStorage.getItem("clickCount")) {
     localStorage.setItem("clickCount", 0);
@@ -9,6 +17,7 @@ window.onload = () => {
   clickCount = Number(localStorage.getItem("clickCount"));
 
   baseMusic = document.querySelector(".baseMusic");
+  baseMusic.volume = globalVolume
 
   let displayElement = document.getElementById("click");
   displayElement.innerHTML = Math.round(clickCount);
@@ -50,11 +59,6 @@ const itemStore = {
   },
 };
 
-const musicTracks = [
-  "audio/shop/shop1.mp3",
-  "audio/shop/shop2.mp3",
-  "audio/shop/shop3.mp3",
-];
 
 function selectRandomMusic() {
   const randomIndex = Math.floor(Math.random() * musicTracks.length);
